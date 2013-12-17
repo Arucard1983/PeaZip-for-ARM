@@ -1,0 +1,44 @@
+Original author of PeaZip project: Giorgio Tani
+Copyright statement avaliable at: http://peazip.sourceforge.net/peazip-tos-privacy.html
+Original License: LGPL v3
+
+PeaZip for ARM port version 5.2.0,
+Patch and Port work by: Arucard1983
+For License information, see LICENSE.
+
+Initial version patched to get rid x86 assembly code to port PeaZip for a Linux ARM with GTK2 toolkit.
+
+Installation:
+You need Lazarus IDE with cross-compiling enabled for ARM architecture, see:
+http://wiki.freepascal.org/Setup_Cross_Compile_For_ARM
+
+Then copy the desired executables:
+peazip
+res/pea
+res/pealaucher
+res/icons/*
+res/lang/*
+res/themes/*
+
+To any folder of your choice (e.g. home folder on your ARM machine).
+
+Quick Troubleshooting:
+PeaZip fail to run:
+ Check your ARM CPU instruction set before building PeaZip. Old ARM machines would use armel (ARMv5 and ARMv6), and newer
+may use armhf (ARMv7). Raspberry Pi use a special instruction set (ARMv6hf) with hard-float point, to optimize build read
+Rapsbian documentation to set the CPU parameters for Lazarus IDE, and then compile.
+ If the pea and pealauncher loads, but main peazip not, there's a possibility of a permission error. So change directory and
+ chown file to fix this issues. (The crash is due to a failure to write configuration files).
+
+PeaZip is too slow:
+ Sorry, ARM chips (specially the armel ones) may take some time to compress and extract huge files, or with heavy encription
+ encoding. Please, be patient.
+ 
+Cannot create 7z, Rar, etc...
+ Install the missing components using our Linux ARM distro package manager.
+ Creating RAR files in Linux ARM machines requires an x86 emulator, so it will be too slow for practical uses (unless your
+ ARM CPU is armhf and multicore). If you want to try anyway, install qemu-user and rar package and run with:
+ $ qemu-i386-static rar_static a rarfile.rar <options>
+ 
+ Thanks:
+ Arucard1983 thanks Lazarus community and Giorgio Tani for aknowledge my effect to port their work to ARM.
