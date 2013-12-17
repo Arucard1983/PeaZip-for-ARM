@@ -1,0 +1,20 @@
+Embedded themes does not contain .theme file nor graphic, that is embedded in PeaZip for maximum startup performances.
+It is possible to display a custom logo (up to 192 px width, 64 px height) in PeaZip file manager’s toolbar, replacing fm-theme.bmp in theme’s folder with a custom graphic file in BMP format.
+
+Seven theme provides icons meant to integrate the application's look and feel in a Windows Vista / 7 environment, in order to provide more familiar visual metaphors to users of those systems.
+Icons are derived from:
+
+Tango Desktop Project
+
+Original reference: http://tango.freedesktop.org/Tango_Desktop_Project
+Original license: Attribution-Share Alike 2.5 Generic http://creativecommons.org/licenses/by-sa/2.5/
+
+Crystal and CristalClear
+
+Original reference: http://www.everaldo.com/crystal/
+Original license: LGPL
+
+NuoveXT
+
+Original reference: http://nuovext.pwsp.net/
+Original license: LGPL

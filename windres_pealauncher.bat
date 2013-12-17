@@ -1,0 +1,1 @@
+windres -i pealauncher.rc -o pealauncher.res

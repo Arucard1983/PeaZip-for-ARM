@@ -1,0 +1,231 @@
+object FormApps: TFormApps
+  Left = 85
+  Height = 420
+  Top = 472
+  Width = 700
+  Caption = 'FormApps'
+  ClientHeight = 420
+  ClientWidth = 700
+  Position = poScreenCenter
+  LCLVersion = '1.0.10.0'
+  object PanelApps: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 374
+    Top = 0
+    Width = 700
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 374
+    ClientWidth = 700
+    TabOrder = 0
+    object Labelcb6: TLabel
+      AnchorSideTop.Control = PanelApps
+      Left = 12
+      Height = 16
+      Top = 12
+      Width = 312
+      BorderSpacing.Top = 12
+      Caption = 'Custom editors/players (override system''s file associations)'
+      ParentColor = False
+    end
+    object Imagece1: TImage
+      AnchorSideLeft.Control = Labelcb6
+      AnchorSideTop.Control = Labelcb9
+      AnchorSideTop.Side = asrCenter
+      Left = 24
+      Height = 16
+      Top = 40
+      Width = 16
+      BorderSpacing.Left = 12
+    end
+    object Labelcb9: TLabel
+      AnchorSideLeft.Control = Imagece1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Labelcb6
+      AnchorSideTop.Side = asrBottom
+      Left = 43
+      Height = 16
+      Top = 40
+      Width = 28
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 12
+      Caption = 'Basic'
+      ParentColor = False
+    end
+    object Imagece2: TImage
+      AnchorSideLeft.Control = Imagece1
+      AnchorSideTop.Control = Labelcb8
+      AnchorSideTop.Side = asrCenter
+      Left = 24
+      Height = 16
+      Top = 190
+      Width = 16
+    end
+    object Labelcb8: TLabel
+      AnchorSideLeft.Control = Labelcb9
+      AnchorSideTop.Control = StringGridCustEdit
+      AnchorSideTop.Side = asrBottom
+      Left = 43
+      Height = 16
+      Top = 190
+      Width = 54
+      BorderSpacing.Top = 18
+      Caption = 'Advanced'
+      ParentColor = False
+    end
+    object Labelcb15: TLabel
+      AnchorSideLeft.Control = StringGridCustEdit1
+      AnchorSideTop.Control = StringGridCustEdit1
+      AnchorSideTop.Side = asrBottom
+      Left = 43
+      Height = 16
+      Top = 328
+      Width = 54
+      BorderSpacing.Top = 6
+      Caption = 'Advanced'
+      ParentColor = False
+    end
+    object StringGridCustEdit: TStringGrid
+      AnchorSideLeft.Control = Labelcb9
+      AnchorSideTop.Control = Labelcb9
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 43
+      Height = 110
+      Top = 62
+      Width = 640
+      AlternateColor = clCream
+      BorderSpacing.Top = 6
+      Color = clWhite
+      ColCount = 3
+      DefaultRowHeight = 18
+      Flat = True
+      GridLineWidth = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goRowMoving, goRowSelect, goSmoothScroll]
+      PopupMenu = pmCustEdit
+      RowCount = 17
+      TabOrder = 0
+      TitleStyle = tsNative
+      OnColRowMoved = StringGridCustEditColRowMoved
+      OnDblClick = StringGridCustEditDblClick
+      OnMouseDown = StringGridCustEditMouseDown
+    end
+    object StringGridCustEdit1: TStringGrid
+      AnchorSideLeft.Control = Labelcb8
+      AnchorSideTop.Control = Labelcb8
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 43
+      Height = 110
+      Top = 212
+      Width = 640
+      AlternateColor = clCream
+      BorderSpacing.Top = 6
+      Color = clWhite
+      DefaultRowHeight = 18
+      Flat = True
+      GridLineWidth = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goRowMoving, goRowSelect, goSmoothScroll]
+      PopupMenu = pmCustEdit1
+      RowCount = 9
+      TabOrder = 1
+      TitleStyle = tsNative
+      OnColRowMoved = StringGridCustEdit1ColRowMoved
+      OnDblClick = StringGridCustEdit1DblClick
+      OnMouseDown = StringGridCustEdit1MouseDown
+      OnSelectCell = StringGridCustEdit1SelectCell
+    end
+    object Labelcb11: TBitBtn
+      AnchorSideLeft.Control = PanelApps
+      AnchorSideRight.Control = PanelApps
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelApps
+      AnchorSideBottom.Side = asrBottom
+      Left = 488
+      Height = 26
+      Top = 348
+      Width = 200
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Left = 6
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 12
+      Caption = 'Reset Applications'
+      ModalResult = 3
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object ButtonPanel1: TButtonPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideBottom.Control = Owner
+    Left = 6
+    Height = 34
+    Top = 380
+    Width = 688
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel]
+  end
+  object pmCustEdit: TPopupMenu
+    left = 480
+    top = 336
+    object pmCustEditDesc: TMenuItem
+      Caption = 'Enter description'
+      OnClick = pmCustEditDescClick
+    end
+    object pmCustEditAdd: TMenuItem
+      Caption = 'Select application'
+      OnClick = pmCustEditAddClick
+    end
+    object pmCustEditEdit: TMenuItem
+      Caption = 'Edit'
+      OnClick = pmCustEditEditClick
+    end
+    object pmCustEditRemove: TMenuItem
+      Caption = 'Remove'
+      OnClick = pmCustEditRemoveClick
+    end
+  end
+  object pmCustEdit1: TPopupMenu
+    left = 544
+    top = 336
+    object pmCustEditDesc1: TMenuItem
+      Caption = 'Enter description'
+      OnClick = pmCustEditDesc1Click
+    end
+    object pmCustEditAdd1: TMenuItem
+      Caption = 'Select application'
+      OnClick = pmCustEditAdd1Click
+    end
+    object pmCustEditEdit1: TMenuItem
+      Caption = 'Edit string before input name'
+      OnClick = pmCustEditEdit1Click
+    end
+    object pmCustEditEdit1after: TMenuItem
+      Caption = 'Edit string after input name'
+      OnClick = pmCustEditEdit1afterClick
+    end
+    object pmCustEditRemove1: TMenuItem
+      Caption = 'Remove'
+      OnClick = pmCustEditRemove1Click
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 133
+    top = 189
+  end
+end

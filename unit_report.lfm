@@ -1,0 +1,218 @@
+object Form_report: TForm_report
+  Left = 159
+  Height = 400
+  Top = 156
+  Width = 640
+  Caption = 'Report'
+  ClientHeight = 400
+  ClientWidth = 640
+  Color = clForm
+  Icon.Data = {
+    7E03000000000100010010100000010018006803000016000000280000001000
+    0000200000000100180000000000000300006400000064000000000000000000
+    0000009F78009F7200A97700B87F00CD8900E39400E69600E69600E69600E696
+    00E69600E69600E69600E69600E69600E495009E7F00976C00AA4F00B34100A9
+    50009B6F00B87F00DC9100E69600E69600E69600E69600E69600E69600E69600
+    E29500A99400AD4B00BE3900C16700BE3600A85200966E00986F00BE8200E495
+    00E69600E69600E69600E69600E69600DD9400B8AD00B93900C37800C9D200C1
+    6400B53E00966E00966E00966E00A67600DD9100E69600E69600E69600E69600
+    D59300CCD400AF4800BF3E00C37900BE3900AA4F00976B00A25B00A557009968
+    009E7200D98F00E69600E69600E69600CB9200E3FB009C7400AE4A00B83900AD
+    4B009D6300B83900BE3400BE3600BC3500A25B009E7200DD9100E69600E49500
+    C09100E6FF00B7AE00966E00966D00966D00B53E00C05700C7BC00C8C500C275
+    00BC3500996800A67600E49500D69300BF9100E6FF00DCF000987300966E009D
+    6300BD3200C6A200C9D200C9D200C8C500BE3600A65500966E00BD8100C39100
+    BF9100E6FF00E6FF00BDBA00966E009A6700BD3300C59600C9D200C9D200C7BC
+    00BE3400A35900966E008E6E00B78C00BF9100E6FF00E6FF00E4FD00A68E0096
+    6E00B04600BF4400C59800C6A300C05800B83900976B00926D00836C009D7B00
+    BF9100E6FF00E6FF00E6FF00DDF1009E7F00976B00B04600BD3300BD3200B53E
+    009D6300A94F00A940009B4E00876D00BC8F00E6FF00E6FF00E6FF00E6FF00D9
+    EB009E7F00966E009A67009C6400966D00AC4B00B63800B86600B535009A5000
+    AC8500E6FF00E6FF00E6FF00E6FF00E6FF00DDF100A68E00966E00966E00926D
+    00B03800B97700C0D000B76300AA3D009C7B00E6FF00E6FF00E6FF00E6FF00E6
+    FF00E6FF00E4FD00BCB9008D7200836C00A24600B53C00B97700B538009C4D00
+    917400E6FF00E6FF00E6FF00E6FF00E6FF00E2FF00CCFF00B1FF00A6EF0093AB
+    00877100A14800AE3800A04900846A00897000E2FF00DFFF00D8FF00CCFF00BD
+    FF00ADFF00ABFF00ABFF00ABFF00ABFF00A9FB009ED20093AA008C9000877D00
+    8876000009C300007832000023CF00007E490000615C00007D3F00008A0E0000
+    CA190000D80500002AE90000B2A50000F0670000131300001C5E0000A6810000
+    0E78
+  }
+  OnClose = FormClose
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '0.9.30'
+  object Label4: TLabel
+    AnchorSideLeft.Control = Label3
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 16
+    Top = 314
+    Width = 616
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Label4'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Label2
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 16
+    Top = 298
+    Width = 616
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Label3'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 16
+    Top = 282
+    Width = 616
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Label2'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Notebook1
+    AnchorSideTop.Control = Notebook1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Notebook1
+    AnchorSideRight.Side = asrBottom
+    Left = 12
+    Height = 16
+    Top = 266
+    Width = 616
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 12
+    BorderSpacing.Top = 6
+    BorderSpacing.Right = 12
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object Bevel9: TBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 6
+    Height = 2
+    Top = 360
+    Width = 628
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 6
+    Shape = bsBottomLine
+  end
+  object Button2: TBitBtn
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 518
+    Height = 26
+    Top = 368
+    Width = 110
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 12
+    BorderSpacing.Bottom = 6
+    Caption = 'Close'
+    NumGlyphs = 0
+    OnClick = Button2Click
+    TabOrder = 0
+  end
+  object Notebook1: TPageControl
+    Left = 0
+    Height = 260
+    Top = 0
+    Width = 640
+    ActivePage = Input
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 0
+    TabOrder = 1
+    object Input: TTabSheet
+      Caption = 'Input'
+      ClientHeight = 232
+      ClientWidth = 632
+      object StringGrid1: TStringGrid
+        AnchorSideLeft.Control = Input
+        AnchorSideTop.Control = Input
+        AnchorSideRight.Control = Input
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Input
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 232
+        Top = 0
+        Width = 632
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderStyle = bsNone
+        ColCount = 2
+        DefaultRowHeight = 18
+        FixedCols = 0
+        Flat = True
+        GridLineWidth = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goRangeSelect, goColSizing, goRowSelect, goDblClickAutoSize, goSmoothScroll]
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+    object Output: TTabSheet
+      Caption = 'Output'
+      ClientHeight = 232
+      ClientWidth = 632
+      object StringGrid2: TStringGrid
+        AnchorSideLeft.Control = Output
+        AnchorSideTop.Control = Output
+        AnchorSideRight.Control = Output
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Output
+        AnchorSideBottom.Side = asrBottom
+        Left = 0
+        Height = 232
+        Top = 0
+        Width = 632
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderStyle = bsNone
+        Color = clWhite
+        DefaultRowHeight = 18
+        FixedCols = 0
+        Flat = True
+        GridLineWidth = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goRangeSelect, goRowSelect, goSmoothScroll]
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+  end
+  object Button1: TImage
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Button2
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Button2
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Cursor = crHandPoint
+    Left = 12
+    Height = 16
+    Hint = 'Save job log'
+    Top = 373
+    Width = 16
+    BorderSpacing.Left = 12
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 6
+    OnClick = Button1Click
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Save as'
+    left = 156
+    top = 375
+  end
+end

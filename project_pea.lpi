@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <Title Value="Pea"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="project_pea.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project_pea"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="25"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="305"/>
+        <CursorPos X="4" Y="324"/>
+        <UsageCount Value="92"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="unit_pea.lfm"/>
+        <TopLine Value="342"/>
+        <CursorPos X="41" Y="4"/>
+        <SyntaxHighlighter Value="LFM"/>
+        <UsageCount Value="7"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="pea_utils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="pea_utils"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="43"/>
+        <CursorPos X="45" Y="62"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="list_utils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="list_utils"/>
+        <EditorIndex Value="7"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="46"/>
+        <CursorPos X="60" Y="58"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="unit_report.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form_report"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit_report"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="82"/>
+        <CursorPos X="20" Y="112"/>
+        <UsageCount Value="181"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="unit_pea.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form_pea"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit_pea"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="46"/>
+        <CursorPos X="33" Y="72"/>
+        <UsageCount Value="181"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="unit2.pas"/>
+        <ComponentName Value="Form2"/>
+        <UnitName Value="Unit2"/>
+        <TopLine Value="1"/>
+        <CursorPos X="11" Y="10"/>
+        <UsageCount Value="88"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="rfs_utils.pas"/>
+        <UnitName Value="rfs_utils"/>
+        <EditorIndex Value="6"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="13"/>
+        <CursorPos X="64" Y="25"/>
+        <UsageCount Value="82"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="we\fcrypta_eax256.pas"/>
+        <UnitName Value="fcrypta_eax256"/>
+        <TopLine Value="44"/>
+        <CursorPos X="39" Y="61"/>
+        <UsageCount Value="13"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="unit_report.lfm"/>
+        <IsPartOfProject Value="True"/>
+        <SyntaxHighlighter Value="LFM"/>
+        <UsageCount Value="181"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="V:\lazarus\WinXp\WinXP.pas"/>
+        <UnitName Value="WinXP"/>
+        <TopLine Value="1"/>
+        <CursorPos X="19" Y="13"/>
+        <UsageCount Value="8"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="ansiutf8_utils.pas"/>
+        <UnitName Value="ansiutf8_utils"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="230"/>
+        <CursorPos X="1" Y="260"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="I:\lazarus\fpc\2.2.3\source\rtl\inc\systemh.inc"/>
+        <TopLine Value="676"/>
+        <CursorPos X="11" Y="694"/>
+        <UsageCount Value="8"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="I:\lazarus\fpc\2.2.3\source\rtl\objpas\sysutils\finah.inc"/>
+        <TopLine Value="7"/>
+        <CursorPos X="1" Y="38"/>
+        <UsageCount Value="9"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="I:\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <TopLine Value="491"/>
+        <CursorPos X="15" Y="507"/>
+        <UsageCount Value="8"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="I:\lazarus\fpc\2.2.2\source\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="1814"/>
+        <CursorPos X="10" Y="1855"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="mem_util.pas"/>
+        <UnitName Value="Mem_Util"/>
+        <TopLine Value="59"/>
+        <CursorPos X="11" Y="81"/>
+        <UsageCount Value="11"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="I:\lazarus\fpc\2.2.2\source\rtl\inc\systemh.inc"/>
+        <TopLine Value="261"/>
+        <CursorPos X="9" Y="280"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="I:\lazarus\fpc\2.2.2\source\rtl\objpas\sysutils\filutilh.inc"/>
+        <TopLine Value="73"/>
+        <CursorPos X="17" Y="90"/>
+        <UsageCount Value="8"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="I:\lazarus\fpc\2.2.2\source\rtl\objpas\sysutils\sysutils.inc"/>
+        <TopLine Value="55"/>
+        <CursorPos X="15" Y="61"/>
+        <UsageCount Value="8"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="I:\lazarus\fpc\2.2.2\source\rtl\win\sysutils.pp"/>
+        <UnitName Value="sysutils"/>
+        <TopLine Value="435"/>
+        <CursorPos X="3" Y="439"/>
+        <UsageCount Value="8"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="I:\lazarus\fpc\2.2.2\source\rtl\objpas\sysutils\sysstrh.inc"/>
+        <TopLine Value="95"/>
+        <CursorPos X="10" Y="111"/>
+        <UsageCount Value="8"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="I:\lazarus\fpc\2.2.2\source\rtl\objpas\sysutils\sysstr.inc"/>
+        <TopLine Value="777"/>
+        <CursorPos X="4" Y="799"/>
+        <UsageCount Value="8"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\lazarus\fpc\2.6.2\source\rtl\win\wininc\func.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="11" Y="390"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="tsc.pas"/>
+        <UnitName Value="TSC"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="155"/>
+        <CursorPos X="19" Y="163"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit25>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4079" Column="44" TopLine="4062"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3971" Column="16" TopLine="3953"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4098" Column="38" TopLine="3988"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4404" Column="18" TopLine="4376"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3969" Column="50" TopLine="3953"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3981" Column="1" TopLine="3975"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4068" Column="45" TopLine="4044"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="71" Column="85" TopLine="43"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="336" Column="22" TopLine="307"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="319" Column="67" TopLine="312"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="336" Column="22" TopLine="312"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="330" Column="45" TopLine="312"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3990" Column="17" TopLine="3975"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3407" Column="13" TopLine="3389"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4121" Column="70" TopLine="4111"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4264" Column="121" TopLine="4236"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4121" Column="69" TopLine="4104"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="4096" Column="29" TopLine="4079"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3854" Column="32" TopLine="3837"/>
+      </Position19>
+      <Position20>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3847" Column="38" TopLine="3837"/>
+      </Position20>
+      <Position21>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3600" Column="53" TopLine="3584"/>
+      </Position21>
+      <Position22>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3597" Column="53" TopLine="3584"/>
+      </Position22>
+      <Position23>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3514" Column="41" TopLine="3497"/>
+      </Position23>
+      <Position24>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3513" Column="37" TopLine="3497"/>
+      </Position24>
+      <Position25>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3512" Column="37" TopLine="3497"/>
+      </Position25>
+      <Position26>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="3" Column="104" TopLine="1"/>
+      </Position26>
+      <Position27>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="328" Column="87" TopLine="316"/>
+      </Position27>
+      <Position28>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="336" Column="22" TopLine="316"/>
+      </Position28>
+      <Position29>
+        <Filename Value="unit_pea.pas"/>
+        <Caret Line="341" Column="61" TopLine="316"/>
+      </Position29>
+      <Position30>
+        <Filename Value="tsc.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="pea"/>
+    </Target>
+    <SearchPaths>
+      <SrcPath Value="$(LazarusDir)\lcl;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Optimizations>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dPurePascal"/>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="5">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="unit1.pas"/>
+        <Line Value="1300"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="unit1.pas"/>
+        <Line Value="841"/>
+      </Item2>
+      <Item3>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="unit1.pas"/>
+        <Line Value="1553"/>
+      </Item3>
+      <Item4>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="unit1.pas"/>
+        <Line Value="1579"/>
+      </Item4>
+      <Item5>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="unitpea.pas"/>
+        <Line Value="663"/>
+      </Item5>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

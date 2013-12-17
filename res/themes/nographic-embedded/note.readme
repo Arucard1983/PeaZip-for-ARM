@@ -1,0 +1,3 @@
+This theme is meant to start PeaZip GUI with no graphic icons.
+Embedded themes does not contain .theme file nor graphic, that is embedded in PeaZip for maximum startup performances.
+It is possible to display a custom logo (up to 192 px width, 64 px height) in PeaZip file manager’s toolbar, replacing fm-theme.bmp in theme’s folder with a custom graphic file in BMP format.

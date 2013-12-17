@@ -1,0 +1,1375 @@
+object Form_pea: TForm_pea
+  Left = 30
+  Height = 240
+  Top = 50
+  Width = 560
+  ActiveControl = EditPW1
+  Caption = 'PEA'
+  ClientHeight = 240
+  ClientWidth = 560
+  Color = clForm
+  Icon.Data = {
+    7E03000000000100010010100000010018006803000016000000280000001000
+    0000200000000100180000000000000300006400000064000000000000000000
+    0000009F78009F7200A97700B87F00CD8900E39400E69600E69600E69600E696
+    00E69600E69600E69600E69600E69600E495009E7F00976C00AA4F00B34100A9
+    50009B6F00B87F00DC9100E69600E69600E69600E69600E69600E69600E69600
+    E29500A99400AD4B00BE3900C16700BE3600A85200966E00986F00BE8200E495
+    00E69600E69600E69600E69600E69600DD9400B8AD00B93900C37800C9D200C1
+    6400B53E00966E00966E00966E00A67600DD9100E69600E69600E69600E69600
+    D59300CCD400AF4800BF3E00C37900BE3900AA4F00976B00A25B00A557009968
+    009E7200D98F00E69600E69600E69600CB9200E3FB009C7400AE4A00B83900AD
+    4B009D6300B83900BE3400BE3600BC3500A25B009E7200DD9100E69600E49500
+    C09100E6FF00B7AE00966E00966D00966D00B53E00C05700C7BC00C8C500C275
+    00BC3500996800A67600E49500D69300BF9100E6FF00DCF000987300966E009D
+    6300BD3200C6A200C9D200C9D200C8C500BE3600A65500966E00BD8100C39100
+    BF9100E6FF00E6FF00BDBA00966E009A6700BD3300C59600C9D200C9D200C7BC
+    00BE3400A35900966E008E6E00B78C00BF9100E6FF00E6FF00E4FD00A68E0096
+    6E00B04600BF4400C59800C6A300C05800B83900976B00926D00836C009D7B00
+    BF9100E6FF00E6FF00E6FF00DDF1009E7F00976B00B04600BD3300BD3200B53E
+    009D6300A94F00A940009B4E00876D00BC8F00E6FF00E6FF00E6FF00E6FF00D9
+    EB009E7F00966E009A67009C6400966D00AC4B00B63800B86600B535009A5000
+    AC8500E6FF00E6FF00E6FF00E6FF00E6FF00DDF100A68E00966E00966E00926D
+    00B03800B97700C0D000B76300AA3D009C7B00E6FF00E6FF00E6FF00E6FF00E6
+    FF00E6FF00E4FD00BCB9008D7200836C00A24600B53C00B97700B538009C4D00
+    917400E6FF00E6FF00E6FF00E6FF00E6FF00E2FF00CCFF00B1FF00A6EF0093AB
+    00877100A14800AE3800A04900846A00897000E2FF00DFFF00D8FF00CCFF00BD
+    FF00ADFF00ABFF00ABFF00ABFF00ABFF00A9FB009ED20093AA008C9000877D00
+    8876000009C300007832000023CF00007E490000615C00007D3F00008A0E0000
+    CA190000D80500002AE90000B2A50000F0670000131300001C5E0000A6810000
+    0E78
+  }
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '1.0.12.0'
+  object LabelTime1: TLabel
+    AnchorSideBottom.Control = ProgressBar1
+    Left = 8
+    Height = 16
+    Top = 168
+    Width = 280
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 3
+    Caption = ' '
+    ParentColor = False
+    ParentFont = False
+  end
+  object Bevel9: TBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ButtonDone1
+    Left = 6
+    Height = 2
+    Top = 200
+    Width = 548
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 6
+    Shape = bsBottomLine
+  end
+  object PanelTools: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelTime1
+    Left = 0
+    Height = 168
+    Top = 0
+    Width = 560
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 168
+    ClientWidth = 560
+    TabOrder = 7
+    object LabelTools2: TLabel
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 16
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 6
+      Caption = 'Input:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Image7: TImage
+      AnchorSideTop.Control = LabelTools2
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 16
+      Width = 16
+      Picture.Data = {
+        07544269746D617036030000424D360300000000000036000000280000001000
+        000010000000010018000000000000030000930B0000930B0000000000000000
+        0000FFFFFF858A88CED0CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFE858A88858A88858A88C3C5
+        C4E8E8E8E4E4E4E2E2E2E5E5E5E9E9E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF858A88FEFDFDFEFDFD858A88CED0CFEBEBEBEBEBEBEBEBEBFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0D1D0858A88FEFDFDEFEFEFFEFD
+        FD858A88858A88858A88858A88858A88858A88858A88C9C9C9FFFFFFFFFFFFFF
+        FFFF858A88FEFDFDFEFDFDEEEEEEEFEFEFFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFD858A88CED0CF858A88FFFFFF858A88FEFDFDEBEBEBECECECEDED
+        EDEEEEEEEFEFEFEFEFEFF0F0F0F1F1F1F2F2F2FEFDFD858A88858A88858A88FF
+        FFFF858A88FEFDFDEAEAEAEBEBEBECECECECECECEDEDEDEEEEEEEFEFEFF0F0F0
+        F1F1F1FEFDFD858A88FEFDFD858A88FFFFFF858A88FEFDFDE9E9E9E9E9E9EAEA
+        EAEBEBEBECECECEDEDEDEEEEEEEFEFEFEFEFEFFEFDFD858A88FEFDFD858A88D0
+        D1D0858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9EAEAEAEBEBEBECECECEDEDED
+        EEEEEEFEFDFD858A88FEFDFDFEFDFD858A88858A88FEFDFDE9E9E9E9E9E9E9E9
+        E9E9E9E9E9E9E9EAEAEAEBEBEBECECECECECECFEFDFD858A88EBEBEBFEFDFD85
+        8A88858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9EAEAEA
+        EBEBEBFEFDFD858A88EAEAEAFEFDFD858A88858A88FEFDFDFEFDFDFEFDFDFEFD
+        FDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88E9E9E9FEFDFD85
+        8A88C3C6C5858A88858A88858A88858A88858A88858A88858A88858A88858A88
+        858A88858A88C4C6C6E9E9E9FEFDFD858A88FFFFFFFFFFFFFFFFFF858A88FEFD
+        FDEBEBEBEAEAEAE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9FEFDFD85
+        8A88FFFFFFFFFFFFFFFFFF858A88FEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88FFFFFFFFFFFFFFFFFFD3D5D4858A
+        88858A88858A88858A88858A88858A88858A88858A88858A88858A88858A88C3
+        C6C5
+      }
+      Transparent = True
+    end
+    object LabelTools3: TLabel
+      AnchorSideTop.Control = LabelTools2
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 32
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = ' '
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelTools4: TLabel
+      AnchorSideTop.Control = LabelTools3
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 48
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = ' '
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object PanelDecrypt1: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelTime1
+    Left = 0
+    Height = 168
+    Top = 0
+    Width = 560
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 168
+    ClientWidth = 560
+    TabOrder = 1
+    object LabelDecrypt2: TLabel
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 16
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 6
+      Caption = 'Input:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelDecrypt3: TLabel
+      AnchorSideTop.Control = LabelDecrypt2
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 32
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Output:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelDecrypt4: TLabel
+      AnchorSideTop.Control = LabelDecrypt3
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 60
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 12
+      Caption = 'Using:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelDecrypt5: TLabel
+      AnchorSideTop.Control = LabelDecrypt4
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 76
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = ' '
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelDecrypt6: TLabel
+      AnchorSideTop.Control = LabelDecrypt5
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 92
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = ' '
+      ParentColor = False
+      ParentFont = False
+    end
+    object Image4: TImage
+      AnchorSideTop.Control = LabelDecrypt2
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 16
+      Width = 16
+      Picture.Data = {
+        07544269746D617036030000424D360300000000000036000000280000001000
+        000010000000010018000000000000030000930B0000930B0000000000000000
+        0000FFFFFF858A88CED0CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFE858A88858A88858A88C3C5
+        C4E8E8E8E4E4E4E2E2E2E5E5E5E9E9E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF858A88FEFDFDFEFDFD858A88CED0CFEBEBEBEBEBEBEBEBEBFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0D1D0858A88FEFDFDEFEFEFFEFD
+        FD858A88858A88858A88858A88858A88858A88858A88C9C9C9FFFFFFFFFFFFFF
+        FFFF858A88FEFDFDFEFDFDEEEEEEEFEFEFFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFD858A88CED0CF858A88FFFFFF858A88FEFDFDEBEBEBECECECEDED
+        EDEEEEEEEFEFEFEFEFEFF0F0F0F1F1F1F2F2F2FEFDFD858A88858A88858A88FF
+        FFFF858A88FEFDFDEAEAEAEBEBEBECECECECECECEDEDEDEEEEEEEFEFEFF0F0F0
+        F1F1F1FEFDFD858A88FEFDFD858A88FFFFFF858A88FEFDFDE9E9E9E9E9E9EAEA
+        EAEBEBEBECECECEDEDEDEEEEEEEFEFEFEFEFEFFEFDFD858A88FEFDFD858A88D0
+        D1D0858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9EAEAEAEBEBEBECECECEDEDED
+        EEEEEEFEFDFD858A88FEFDFDFEFDFD858A88858A88FEFDFDE9E9E9E9E9E9E9E9
+        E9E9E9E9E9E9E9EAEAEAEBEBEBECECECECECECFEFDFD858A88EBEBEBFEFDFD85
+        8A88858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9EAEAEA
+        EBEBEBFEFDFD858A88EAEAEAFEFDFD858A88858A88FEFDFDFEFDFDFEFDFDFEFD
+        FDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88E9E9E9FEFDFD85
+        8A88C3C6C5858A88858A88858A88858A88858A88858A88858A88858A88858A88
+        858A88858A88C4C6C6E9E9E9FEFDFD858A88FFFFFFFFFFFFFFFFFF858A88FEFD
+        FDEBEBEBEAEAEAE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9FEFDFD85
+        8A88FFFFFFFFFFFFFFFFFF858A88FEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88FFFFFFFFFFFFFFFFFFD3D5D4858A
+        88858A88858A88858A88858A88858A88858A88858A88858A88858A88858A88C3
+        C6C5
+      }
+      Transparent = True
+    end
+  end
+  object PanelEncrypt1: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelTime1
+    Left = 0
+    Height = 168
+    Top = 0
+    Width = 560
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 168
+    ClientWidth = 560
+    TabOrder = 2
+    object LabelEncrypt2: TLabel
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 16
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 6
+      Caption = 'Input:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelEncrypt3: TLabel
+      AnchorSideTop.Control = LabelEncrypt2
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 32
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Output:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelEncrypt4: TLabel
+      AnchorSideTop.Control = LabelEncrypt3
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 60
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 12
+      Caption = 'Using:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelEncrypt5: TLabel
+      AnchorSideTop.Control = LabelEncrypt4
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 76
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Input details:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelEncrypt6: TLabel
+      AnchorSideTop.Control = LabelEncrypt5
+      AnchorSideTop.Side = asrBottom
+      Left = 32
+      Height = 16
+      Top = 92
+      Width = 520
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Output details:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelE1: TLabel
+      AnchorSideTop.Control = LabelEncrypt3
+      AnchorSideTop.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 8
+      Height = 29
+      Top = 54
+      Width = 15
+      BorderSpacing.Top = 6
+      Caption = '+'
+      Font.Color = clGrayText
+      Font.Height = -20
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      OnClick = LabelE1Click
+    end
+    object Image3: TImage
+      AnchorSideTop.Control = LabelEncrypt2
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 16
+      Width = 16
+      Picture.Data = {
+        07544269746D617036030000424D360300000000000036000000280000001000
+        000010000000010018000000000000030000930B0000930B0000000000000000
+        0000FFFFFF858A88CED0CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFE858A88858A88858A88C3C5
+        C4E8E8E8E4E4E4E2E2E2E5E5E5E9E9E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF858A88FEFDFDFEFDFD858A88CED0CFEBEBEBEBEBEBEBEBEBFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0D1D0858A88FEFDFDEFEFEFFEFD
+        FD858A88858A88858A88858A88858A88858A88858A88C9C9C9FFFFFFFFFFFFFF
+        FFFF858A88FEFDFDFEFDFDEEEEEEEFEFEFFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFD858A88CED0CF858A88FFFFFF858A88FEFDFDEBEBEBECECECEDED
+        EDEEEEEEEFEFEFEFEFEFF0F0F0F1F1F1F2F2F2FEFDFD858A88858A88858A88FF
+        FFFF858A88FEFDFDEAEAEAEBEBEBECECECECECECEDEDEDEEEEEEEFEFEFF0F0F0
+        F1F1F1FEFDFD858A88FEFDFD858A88FFFFFF858A88FEFDFDE9E9E9E9E9E9EAEA
+        EAEBEBEBECECECEDEDEDEEEEEEEFEFEFEFEFEFFEFDFD858A88FEFDFD858A88D0
+        D1D0858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9EAEAEAEBEBEBECECECEDEDED
+        EEEEEEFEFDFD858A88FEFDFDFEFDFD858A88858A88FEFDFDE9E9E9E9E9E9E9E9
+        E9E9E9E9E9E9E9EAEAEAEBEBEBECECECECECECFEFDFD858A88EBEBEBFEFDFD85
+        8A88858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9EAEAEA
+        EBEBEBFEFDFD858A88EAEAEAFEFDFD858A88858A88FEFDFDFEFDFDFEFDFDFEFD
+        FDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88E9E9E9FEFDFD85
+        8A88C3C6C5858A88858A88858A88858A88858A88858A88858A88858A88858A88
+        858A88858A88C4C6C6E9E9E9FEFDFD858A88FFFFFFFFFFFFFFFFFF858A88FEFD
+        FDEBEBEBEAEAEAE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9FEFDFD85
+        8A88FFFFFFFFFFFFFFFFFF858A88FEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88FFFFFFFFFFFFFFFFFFD3D5D4858A
+        88858A88858A88858A88858A88858A88858A88858A88858A88858A88858A88C3
+        C6C5
+      }
+      Transparent = True
+    end
+    object Panel1: TPanel
+      AnchorSideTop.Control = LabelEncrypt3
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Control = PanelEncrypt1
+      AnchorSideBottom.Side = asrBottom
+      Left = 32
+      Height = 114
+      Top = 54
+      Width = 520
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Top = 6
+      BevelOuter = bvNone
+      ClientHeight = 114
+      ClientWidth = 520
+      TabOrder = 0
+      object ShapeE1: TShape
+        Left = 0
+        Height = 5
+        Top = 10
+        Width = 200
+      end
+      object ShapeE2: TShape
+        Left = 0
+        Height = 5
+        Top = 10
+        Width = 200
+        Brush.Color = clHighlight
+      end
+      object LabelOut1: TLabel
+        AnchorSideTop.Control = ShapeE1
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 16
+        Top = 18
+        Width = 171
+        BorderSpacing.Top = 3
+        Caption = 'Compression ratio: calculating...'
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+  end
+  object ProgressBar1: TProgressBar
+    AnchorSideBottom.Control = Bevel9
+    Left = 8
+    Height = 10
+    Top = 187
+    Width = 544
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 3
+    Step = 1
+    TabOrder = 8
+  end
+  object ButtonDone1: TBitBtn
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 438
+    Height = 26
+    Top = 208
+    Width = 110
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 12
+    BorderSpacing.Bottom = 6
+    Caption = 'Close'
+    NumGlyphs = 0
+    OnClick = ButtonDone1Click
+    TabOrder = 3
+    Visible = False
+  end
+  object LabelOpen: TBitBtn
+    AnchorSideRight.Control = ButtonDone1
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Cursor = crHandPoint
+    Left = 322
+    Height = 26
+    Hint = 'Open output path or file'
+    Top = 208
+    Width = 110
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 6
+    Caption = 'Explore'
+    NumGlyphs = 0
+    OnClick = LabelOpenClick
+    ParentFont = False
+    TabOrder = 4
+    Visible = False
+  end
+  object LabelLog1: TBitBtn
+    AnchorSideRight.Control = LabelOpen
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 206
+    Height = 26
+    Hint = 'Display job log'
+    Top = 208
+    Width = 110
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 6
+    Caption = 'Log'
+    NumGlyphs = 0
+    OnClick = LabelLog1Click
+    ParentFont = False
+    TabOrder = 5
+    Visible = False
+  end
+  object PanelRFSinteractive: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 560
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 240
+    ClientWidth = 560
+    TabOrder = 6
+    Visible = False
+    object Label1: TLabel
+      AnchorSideTop.Control = ComboBox1
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 19
+      Width = 67
+      Caption = 'Volume size:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      AnchorSideTop.Control = ComboBox3
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 45
+      Width = 82
+      Caption = 'Integrity check:'
+      ParentColor = False
+    end
+    object ImageSplit: TImage
+      AnchorSideTop.Control = ComboBox1
+      AnchorSideTop.Side = asrCenter
+      Left = 344
+      Height = 16
+      Top = 19
+      Width = 16
+      BorderSpacing.Top = 1
+      Transparent = True
+    end
+    object Bevel11: TBevel
+      AnchorSideLeft.Control = PanelRFSinteractive
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelRFSinteractive
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = ButtonRFSinteractive
+      Left = 6
+      Height = 2
+      Top = 200
+      Width = 548
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.Left = 6
+      BorderSpacing.Top = 2
+      BorderSpacing.Right = 6
+      BorderSpacing.Bottom = 6
+      Shape = bsBottomLine
+    end
+    object ComboBox1: TComboBox
+      Left = 112
+      Height = 23
+      Top = 16
+      Width = 222
+      DropDownCount = 9
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'Custom size'
+        '1.44 MB Floppy Disk'
+        '5 MB (attachment limit)'
+        '10 MB (attachment limit)'
+        '600 MB CD'
+        '700 MB CD'
+        '4 GB (max FAT32 file size)'
+        '4.7 GB DVD'
+        '8.5 GB DVD DL'
+      )
+      OnChange = ComboBox1Change
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'Custom size'
+    end
+    object ComboBox2: TComboBox
+      AnchorSideTop.Control = ComboBox1
+      Left = 416
+      Height = 23
+      Top = 16
+      Width = 58
+      ItemHeight = 15
+      ItemIndex = 2
+      Items.Strings = (
+        'B'
+        'KB'
+        'MB'
+        'GB'
+      )
+      Style = csDropDownList
+      TabOrder = 1
+      Text = 'MB'
+    end
+    object ComboBox3: TComboBox
+      AnchorSideTop.Control = ComboBox1
+      AnchorSideTop.Side = asrBottom
+      Left = 112
+      Height = 23
+      Top = 42
+      Width = 222
+      BorderSpacing.Top = 3
+      DropDownCount = 10
+      ItemHeight = 15
+      ItemIndex = 6
+      Items.Strings = (
+        'WHIRLPOOL'
+        'SHA512'
+        'SHA256'
+        'RIPEMD-160'
+        'SHA1'
+        'MD5'
+        'CRC64'
+        'CRC32'
+        'Adler32'
+        'none'
+      )
+      Style = csDropDownList
+      TabOrder = 2
+      Text = 'CRC64'
+    end
+    object SpinEdit1: TSpinEdit
+      AnchorSideTop.Control = ComboBox1
+      Left = 344
+      Height = 23
+      Top = 16
+      Width = 65
+      MaxValue = 1000000000
+      MinValue = 1
+      TabOrder = 3
+      Value = 1
+    end
+    object ButtonRFSinteractive: TBitBtn
+      AnchorSideRight.Control = ButtonRFSinteractive1
+      AnchorSideBottom.Control = PanelRFSinteractive
+      AnchorSideBottom.Side = asrBottom
+      Left = 357
+      Height = 26
+      Top = 208
+      Width = 75
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Right = 6
+      BorderSpacing.Bottom = 6
+      BorderSpacing.InnerBorder = 4
+      Caption = 'OK'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000030F0000030F00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFDFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFB6BCB83AAD75D4D5D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAAB2AC41AB736AE9B537
+        B376C8CAC8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFF97A19933A3623CE09B1FDB8F54E6AA32B06FB8BCB8FFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8D988E259C542BD4891DCE801ED0841E
+        D48640DE9A2AAB67A5AAA5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2AAC68
+        1791431FC7771BC16F1CC5751CC7781DC97A1DCC7B2CD48925A962949C94FFFF
+        FFFFFFFFFFFFFFFFFFFF2AAC68148D3B1AB8621EB66630C07743C98743D18C4A
+        CF8F3DCB872BC77D23CA7C22AA6189938AFFFFFFFFFFFFFFFFFF39895324B55E
+        53BF8173CE9B7ED6A647C18065AB8657CF917FD9AB76D4A46ED39F40CB8521AA
+        5F60A680FFFFFFFFFFFFB3C0B74DB5729EDBB696DAB24ABB78BBC7C0FFFFFFA6
+        BBAF5CCC8E99DFB993D9B294D9B35BCA8D21AA5E5EA67EFFFFFFFFFFFFC3CAC5
+        59B37752B174CCD1CDFFFFFFFFFFFFFFFFFFB8C5BD62C289B6E7CAB0E0C3B4E1
+        C576CC9921A95D60A77FFFFFFFFFFFFFD6DAD7DBDEDBFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFC9CFCA67B784D0F1DBCEE9D8D9EEE090D9A836A96AFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD9DCD96CAC7FEBFC
+        F0DFF6E565A574D7DAD8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFE8E8E869A376619F6FEAEAEAFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDDDF
+        DDDFE1DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      }
+      NumGlyphs = 0
+      OnClick = ButtonRFSinteractiveClick
+      TabOrder = 4
+    end
+    object ButtonRFSinteractive1: TBitBtn
+      AnchorSideRight.Control = PanelRFSinteractive
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelRFSinteractive
+      AnchorSideBottom.Side = asrBottom
+      Left = 438
+      Height = 26
+      Top = 208
+      Width = 110
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Right = 12
+      BorderSpacing.Bottom = 6
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Cancel'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000F30E0000F30E00000000000000000000FFFFFFD9D9D9
+        626AA2A4A6B2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF989A
+        AC656CA1E3E3E3FFFFFFD6D6D8313EA1364CF21429CA989AACFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFF878BA51127CD3046EA3E499AE2E2E2666DA20922DF
+        485CF64B5FF1051CC9868AA4FFFFFFFFFFFFFFFFFFFFFFFF74799E051DCD5A6C
+        F05A6CF40921D97E83A65560AF213BFF374FFF596DFF4A5DEE051CC7777B9DFF
+        FFFFFFFFFF636997081FCE5A6BEE7383FF5569FF364EFE6E75AA979CC51D38FF
+        2B44FF3950FF576BFF4559EB061CC4666B94565D920A21CA5567ED6B7CFF5165
+        FF4157FF354DFFAFB2C7FFFFFF9399C51F39FF2B44FF354DFF4B60FF384DE802
+        18BA061CC04559ED596DFF475DFF3F56FF374EF9ABAFC9FFFFFFFFFFFFFFFFFF
+        A3A7C71F39FB2F47FF3D54FF4F64FF3147E9364CEE4B60FF3950FF334BFF364C
+        F2BBBDCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB7BACF4D60EF6174FF6174FF61
+        74FF6375FF6375FF5B6EFF495BE3CECFDAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE2E2E23643A63D53F56375FF6375FF6577FF6577FF364CEE6068A6FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD6D6D6303D9C1E32C43148F36B7CFF6B
+        7CFF6B7CFF697BFF2239E61E30B8676C93F0F0F0FFFFFFFFFFFFFFFFFFD4D4D6
+        2E3A971E31C2374DF37989FF7989FF7989FF7989FF7989FF7585FF273DE51E2F
+        B4676C8FEFEFEFFFFFFFE4E4E43A46A03244CE4257F28B99FF8997FF8997FF66
+        73D26775E18D9AFF8997FF8593FF2A40E42839BA707494FFFFFF838ABF1E30BA
+        495DF39BA7FF99A5FF99A5FF727DD0FFFFFFDEDFE46D7BE59FAAFF99A5FF95A1
+        FF2F44E52635ABE6E6E6616BB8566AFEAFB8FFA9B3FFA9B3FF7680CEFFFFFFFF
+        FFFFFFFFFFD9DAE17683E4AFB8FFA9B3FFA9B3FF3C4FDEE9E9E9F2F2F27F89D1
+        BBC3FFBBC3FF7A84D0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD9DAE17D89E5C9CF
+        FFA5B0FF989EC8FFFFFFFFFFFFFFFFFF7E88D27F89D7FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFD9DAE17885E89A9FC6FFFFFFFFFFFF
+      }
+      NumGlyphs = 0
+      OnClick = ButtonRFSinteractive1Click
+      TabOrder = 5
+    end
+  end
+  object PanelPW1: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 560
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 240
+    ClientWidth = 560
+    TabOrder = 0
+    Visible = False
+    OnMouseMove = PanelPW1MouseMove
+    object LabelHint1: TLabel
+      AnchorSideLeft.Control = Image5
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelPS1
+      AnchorSideTop.Side = asrBottom
+      Left = 147
+      Height = 16
+      Top = 126
+      Width = 250
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 12
+      Caption = 'Move the mouse to improve entropy of the salt'
+      ParentColor = False
+      Visible = False
+    end
+    object LabelPW1: TLabel
+      AnchorSideTop.Control = EditPW1
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Hint = 'Type a memorizable passphrase, avoiding words either too common or too easy to guess.'#13#10'You should use mixed upcase and lowcase letters, numbers and special characters.'
+      Top = 41
+      Width = 59
+      Caption = 'Passphrase'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelConfirm1: TLabel
+      AnchorSideTop.Control = EditConfirm1
+      AnchorSideTop.Side = asrCenter
+      Left = 8
+      Height = 16
+      Top = 67
+      Width = 45
+      Caption = 'Confirm'
+      ParentColor = False
+      ParentFont = False
+      Visible = False
+    end
+    object LabelSample1: TLabel
+      AnchorSideLeft.Control = LabelSample2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelHint1
+      AnchorSideTop.Side = asrBottom
+      Left = 196
+      Height = 16
+      Top = 142
+      Width = 47
+      Alignment = taRightJustify
+      BorderSpacing.Left = 6
+      Caption = '[sample]'
+      ParentColor = False
+      Visible = False
+    end
+    object Shape2: TShape
+      AnchorSideTop.Control = EditConfirm1
+      AnchorSideTop.Side = asrBottom
+      Left = 128
+      Height = 5
+      Top = 90
+      Width = 5
+      BorderSpacing.Top = 3
+      Brush.Color = clRed
+    end
+    object LabelPS1: TLabel
+      AnchorSideLeft.Control = Shape2
+      AnchorSideTop.Control = Shape2
+      AnchorSideTop.Side = asrBottom
+      Left = 128
+      Height = 16
+      Hint = 'Esteem of entropy contained in the typed'#13#10'passphrase, has only an informative value'
+      Top = 98
+      Width = 4
+      Alignment = taRightJustify
+      BorderSpacing.Top = 3
+      Caption = ' '
+      ParentColor = False
+    end
+    object LabelKeyFile1: TLabel
+      Cursor = crHandPoint
+      Left = 8
+      Height = 16
+      Hint = 'You can use a file as key, a randomly generated keyfile is higly recommended'
+      Top = 16
+      Width = 39
+      Caption = 'Key file'
+      Font.Color = clNavy
+      Font.Style = [fsUnderline]
+      ParentColor = False
+      ParentFont = False
+      OnClick = LabelKeyFile1Click
+    end
+    object LabelKeyFileName1: TLabel
+      AnchorSideTop.Control = LabelKeyFile1
+      Left = 128
+      Height = 16
+      Top = 16
+      Width = 44
+      Caption = '<none>'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Image5: TImage
+      AnchorSideTop.Control = LabelHint1
+      AnchorSideTop.Side = asrCenter
+      Cursor = crHandPoint
+      Left = 128
+      Height = 16
+      Top = 126
+      Width = 16
+      Picture.Data = {
+        07544269746D617036030000424D360300000000000036000000280000001000
+        000010000000010018000000000000030000930B0000930B0000000000000000
+        0000FFFFFF858A88CED0CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFE858A88858A88858A88C3C5
+        C4E8E8E8E4E4E4E2E2E2E5E5E5E9E9E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFF858A88FEFDFDFEFDFD858A88CED0CFEBEBEBEBEBEBEBEBEBFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0D1D0858A88FEFDFDEFEFEFFEFD
+        FD858A88858A88858A88858A88858A88858A88858A88C9C9C9FFFFFFFFFFFFFF
+        FFFF858A88FEFDFDFEFDFDEEEEEEEFEFEFFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFD858A88CED0CF858A88FFFFFF858A88FEFDFDEBEBEBECECECEDED
+        EDEEEEEEEFEFEFEFEFEFF0F0F0F1F1F1F2F2F2FEFDFD858A88858A88858A88FF
+        FFFF858A88FEFDFDEAEAEAEBEBEBECECECECECECEDEDEDEEEEEEEFEFEFF0F0F0
+        F1F1F1FEFDFD858A88FEFDFD858A88FFFFFF858A88FEFDFDE9E9E9E9E9E9EAEA
+        EAEBEBEBECECECEDEDEDEEEEEEEFEFEFEFEFEFFEFDFD858A88FEFDFD858A88D0
+        D1D0858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9EAEAEAEBEBEBECECECEDEDED
+        EEEEEEFEFDFD858A88FEFDFDFEFDFD858A88858A88FEFDFDE9E9E9E9E9E9E9E9
+        E9E9E9E9E9E9E9EAEAEAEBEBEBECECECECECECFEFDFD858A88EBEBEBFEFDFD85
+        8A88858A88FEFDFDE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9EAEAEA
+        EBEBEBFEFDFD858A88EAEAEAFEFDFD858A88858A88FEFDFDFEFDFDFEFDFDFEFD
+        FDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88E9E9E9FEFDFD85
+        8A88C3C6C5858A88858A88858A88858A88858A88858A88858A88858A88858A88
+        858A88858A88C4C6C6E9E9E9FEFDFD858A88FFFFFFFFFFFFFFFFFF858A88FEFD
+        FDEBEBEBEAEAEAE9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9E9FEFDFD85
+        8A88FFFFFFFFFFFFFFFFFF858A88FEFDFDFEFDFDFEFDFDFEFDFDFEFDFDFEFDFD
+        FEFDFDFEFDFDFEFDFDFEFDFDFEFDFD858A88FFFFFFFFFFFFFFFFFFD3D5D4858A
+        88858A88858A88858A88858A88858A88858A88858A88858A88858A88858A88C3
+        C6C5
+      }
+      Transparent = True
+      Visible = False
+    end
+    object LabelSample2: TLabel
+      AnchorSideLeft.Control = LabelHint1
+      AnchorSideTop.Control = LabelHint1
+      AnchorSideTop.Side = asrBottom
+      Left = 147
+      Height = 16
+      Top = 142
+      Width = 43
+      Alignment = taRightJustify
+      Caption = 'Sample:'
+      ParentColor = False
+      Visible = False
+    end
+    object Bevel10: TBevel
+      AnchorSideLeft.Control = PanelPW1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelPW1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = ButtonPW1
+      Left = 6
+      Height = 2
+      Top = 200
+      Width = 548
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.Left = 6
+      BorderSpacing.Top = 2
+      BorderSpacing.Right = 6
+      BorderSpacing.Bottom = 6
+      Shape = bsBottomLine
+    end
+    object EditPW1: TEdit
+      AnchorSideTop.Control = LabelKeyFile1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelPW1
+      AnchorSideRight.Side = asrBottom
+      Left = 128
+      Height = 23
+      Top = 38
+      Width = 426
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 6
+      BorderSpacing.Right = 6
+      EchoMode = emPassword
+      OnKeyUp = EditPW1KeyUp
+      PasswordChar = '*'
+      TabOrder = 0
+    end
+    object EditConfirm1: TEdit
+      AnchorSideTop.Control = EditPW1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelPW1
+      AnchorSideRight.Side = asrBottom
+      Left = 128
+      Height = 23
+      Top = 64
+      Width = 426
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 3
+      BorderSpacing.Right = 6
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 1
+      Visible = False
+    end
+    object ButtonPW1: TBitBtn
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = ButtonPW2
+      AnchorSideBottom.Control = PanelPW1
+      AnchorSideBottom.Side = asrBottom
+      Left = 357
+      Height = 26
+      Top = 208
+      Width = 75
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Top = 3
+      BorderSpacing.Right = 6
+      BorderSpacing.Bottom = 6
+      BorderSpacing.InnerBorder = 4
+      Caption = 'OK'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000030F0000030F00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFDFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFB6BCB83AAD75D4D5D4FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAAB2AC41AB736AE9B537
+        B376C8CAC8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFF97A19933A3623CE09B1FDB8F54E6AA32B06FB8BCB8FFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8D988E259C542BD4891DCE801ED0841E
+        D48640DE9A2AAB67A5AAA5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2AAC68
+        1791431FC7771BC16F1CC5751CC7781DC97A1DCC7B2CD48925A962949C94FFFF
+        FFFFFFFFFFFFFFFFFFFF2AAC68148D3B1AB8621EB66630C07743C98743D18C4A
+        CF8F3DCB872BC77D23CA7C22AA6189938AFFFFFFFFFFFFFFFFFF39895324B55E
+        53BF8173CE9B7ED6A647C18065AB8657CF917FD9AB76D4A46ED39F40CB8521AA
+        5F60A680FFFFFFFFFFFFB3C0B74DB5729EDBB696DAB24ABB78BBC7C0FFFFFFA6
+        BBAF5CCC8E99DFB993D9B294D9B35BCA8D21AA5E5EA67EFFFFFFFFFFFFC3CAC5
+        59B37752B174CCD1CDFFFFFFFFFFFFFFFFFFB8C5BD62C289B6E7CAB0E0C3B4E1
+        C576CC9921A95D60A77FFFFFFFFFFFFFD6DAD7DBDEDBFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFC9CFCA67B784D0F1DBCEE9D8D9EEE090D9A836A96AFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD9DCD96CAC7FEBFC
+        F0DFF6E565A574D7DAD8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFE8E8E869A376619F6FEAEAEAFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDDDF
+        DDDFE1DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      }
+      NumGlyphs = 0
+      OnClick = ButtonPW1Click
+      TabOrder = 2
+    end
+    object ButtonPW2: TBitBtn
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelPW1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelPW1
+      AnchorSideBottom.Side = asrBottom
+      Left = 438
+      Height = 26
+      Top = 208
+      Width = 110
+      Anchors = [akRight, akBottom]
+      BorderSpacing.Top = 3
+      BorderSpacing.Right = 12
+      BorderSpacing.Bottom = 6
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Cancel'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000F30E0000F30E00000000000000000000FFFFFFD9D9D9
+        626AA2A4A6B2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF989A
+        AC656CA1E3E3E3FFFFFFD6D6D8313EA1364CF21429CA989AACFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFF878BA51127CD3046EA3E499AE2E2E2666DA20922DF
+        485CF64B5FF1051CC9868AA4FFFFFFFFFFFFFFFFFFFFFFFF74799E051DCD5A6C
+        F05A6CF40921D97E83A65560AF213BFF374FFF596DFF4A5DEE051CC7777B9DFF
+        FFFFFFFFFF636997081FCE5A6BEE7383FF5569FF364EFE6E75AA979CC51D38FF
+        2B44FF3950FF576BFF4559EB061CC4666B94565D920A21CA5567ED6B7CFF5165
+        FF4157FF354DFFAFB2C7FFFFFF9399C51F39FF2B44FF354DFF4B60FF384DE802
+        18BA061CC04559ED596DFF475DFF3F56FF374EF9ABAFC9FFFFFFFFFFFFFFFFFF
+        A3A7C71F39FB2F47FF3D54FF4F64FF3147E9364CEE4B60FF3950FF334BFF364C
+        F2BBBDCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB7BACF4D60EF6174FF6174FF61
+        74FF6375FF6375FF5B6EFF495BE3CECFDAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE2E2E23643A63D53F56375FF6375FF6577FF6577FF364CEE6068A6FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD6D6D6303D9C1E32C43148F36B7CFF6B
+        7CFF6B7CFF697BFF2239E61E30B8676C93F0F0F0FFFFFFFFFFFFFFFFFFD4D4D6
+        2E3A971E31C2374DF37989FF7989FF7989FF7989FF7989FF7585FF273DE51E2F
+        B4676C8FEFEFEFFFFFFFE4E4E43A46A03244CE4257F28B99FF8997FF8997FF66
+        73D26775E18D9AFF8997FF8593FF2A40E42839BA707494FFFFFF838ABF1E30BA
+        495DF39BA7FF99A5FF99A5FF727DD0FFFFFFDEDFE46D7BE59FAAFF99A5FF95A1
+        FF2F44E52635ABE6E6E6616BB8566AFEAFB8FFA9B3FFA9B3FF7680CEFFFFFFFF
+        FFFFFFFFFFD9DAE17683E4AFB8FFA9B3FFA9B3FF3C4FDEE9E9E9F2F2F27F89D1
+        BBC3FFBBC3FF7A84D0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD9DAE17D89E5C9CF
+        FFA5B0FF989EC8FFFFFFFFFFFFFFFFFF7E88D27F89D7FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFD9DAE17885E89A9FC6FFFFFFFFFFFF
+      }
+      NumGlyphs = 0
+      OnClick = ButtonPW2Click
+      TabOrder = 3
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    left = 256
+    top = 152
+  end
+  object OpenDialog1: TOpenDialog
+    FilterIndex = 0
+    left = 288
+    top = 152
+  end
+  object ImageList1: TImageList
+    left = 448
+    top = 153
+    Bitmap = {
+      4C69090000001000000010000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00282828FFFFFFFF00282828FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00EFEFEFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00282828FFFFFFFF00282828FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0084807FFF9F9997FFAEAAA8FFAEA9A7FFAEA9A7FFAEA9A7FFAEA9
+      A7FFAEA9A8FFA49D9CFF9C9795FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00827F7DFFC8C3C1FFFBF9F8FFF7F5F3FFF7F5F3FFF7F5F3FFF7F5
+      F3FFF7F6F4FFDBD7D5FF918886FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF007F7C7AFFC4BFBCFFEFE9E4FFE9E3DFFFE9E3DFFFE9E3DFFFE9E3
+      DFFFEAE4E0FFD7D2CFFF8B8380FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF007D7978FFC1BAB9FFE6DDD6FFE1D8D1FFE1D8D1FFE1D8D1FFE1D8
+      D1FFE1D8D2FFD2CDCAFF867E7BFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF007A7675FFB5AFACFFE6DDD6FFE1D8D2FFE1D8D2FFE1D9D2FFE1D8
+      D2FFE2D9D3FFC7C1BDFF7E7673FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF007A7675FF857D79FF9A918EFF9F9795FFA49C99FFA19996FF9F96
+      94FF9B9390FF8A827EFF766E6AFFFFFFFF00FFFFFF00DDDBDBFFD1CECEFFC7C3
+      C3FFC7C3C3FF767372FF6F6662FF97918EFFC7C4C4FFC6C3C1FFDDDCDCFFDAD9
+      D9FFABA8A7FF6A605BFF6B635FFFFFFFFF00D1CECEFFC7C3C3FFDBD8D7FFF1EF
+      EFFFF1EFEFFF736F6EFF665C58FF938E8BFF9C9795FF8A8481FFCCCCCCFFCFCF
+      CFFFAAA8A6FF645955FF655E5BFFC7C4C3FFA29C9DFF989193FF958E90FF958E
+      90FF958E90FF726F6EFF544844FF847E7CFFA5A2A1FF989391FFC6C6C6FFC8C8
+      C9FF9E9B9AFF4F413CFF59514EFFCAC6C6FFB6B2B3FFF5F5F5FFF5F5F5FFF5F5
+      F5FFF5F5F5FFF5F5F5FF4F4B49FF62605FFF818080FF808080FF7E7E7EFF7F7F
+      7FFF6B6A6AFF4B4442FF636060FFA5A0A0FFB8B3B3FFF2F2F2FFF2F2F2FFF1F0
+      F0FFBDB7B7FFBAB6B4FFE5E2E2FFDDDCDCFFD4D1D1FFB1AFAFFF716D6EFF42C8
+      8EFF716D6EFF9E9C9DFF9F9A9AFF908989FFB8B3B3FFF2F2F2FF7F7774FF7F78
+      75FF7F7774FF7E7572FF797270FF776E6CFFCDCCCCFF8B898AFF45AD82FF4BFF
+      B1FF45AD82FF999596FF888182FFA8A3A2FFB8B3B3FFF2F2F2FFEBEAEAFFE2E1
+      E1FFB2ADACFFAEA8A7FFD4D3D3FFD1CDCDFFCCC8C8FFA7A5A5FF716D6EFF4AAC
+      81FF716D6EFF9E9C9DFFA29D9CFFC3BFBEFFB8B3B3FFBFBABCFFB8B3B3FFB8B3
+      B3FFB8B3B3FFB8B3B3FFB8B3B3FFB8B3B3FFB8B3B3FFB8B3B3FFB8B3B3FFB8B3
+      B3FFB8B3B3FFB0ACACFFB9B5B5FFFFFFFF00BBB7B6FF918B8BFF7E7677FF7E76
+      77FF7F7778FF7E7677FF7F7778FF7E7677FF7F7778FF7E7677FF7E7677FF7E76
+      77FF918A8BFFB8B2B3FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C7CACBFFC3C7C7FFC3C6C7FFC2C4
+      C5FFC0C2C3FFBFC1C1FFBDBFBFFFBBBABDFFB6B7BAFFB5B6B7FFB1B2B4FFADAF
+      B1FFADAFAFFFB0B2B5FFFFFFFF00FFFFFF00C7CACBFFFBFAFAFFFBFAFAFFFBFA
+      FAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFA
+      FAFFFBFAFAFFA9ABACFFFFFFFF00FFFFFF00C7CACBFFFBFAFAFFF8F7F7FFF6F5
+      F5FFF6F5F5FFF6F5F5FFF6F5F5FFF6F5F5FFF6F5F5FFF1A78DFFFAB394FFFDB2
+      89FFFBFAFAFFA8AAAEFFFFFFFF00FFFFFF00C5C5C6FFFBFAFAFFF8F7F7FFF6F5
+      F5FFF6F5F5FFF6F5F5FFF6F5F5FFF6F5F5FFF6F5F5FFF5A37FFFC08C99FFF5B2
+      95FFFBFAFAFFA9AAACFFFFFFFF00FFFFFF00C2C2C1FFFBFAFAFFF8F7F7FFF6F5
+      F5FFF6F5F5FFF6F5F5FFF6F5F5FFF6F5F5FFF6F5F5FFF49B74FFF5B190FFEDB2
+      9DFFFBFAFAFFA8AAABFFFFFFFF00FFFFFF00C2C2C1FFFBFAFAFFF9F8F8FFF6F6
+      F6FFF5F5F5FFF6F5F5FFF8F8F8FFF8F7F7FFF7F6F6FFF6F5F5FFF5F4F4FFF3F2
+      F2FFFBFAFAFFA8AAABFFFFFFFF00FFFFFF00BCBDC0FFFBFAFAFFEAE9E9FFC7C7
+      C7FFDDDDDDFFCDCDCDFFEFEFEFFFD2D2D2FFFBFBFBFFF8F7F7FFF4F3F3FFF0EF
+      EFFFFBFAFAFFA8AAABFFFFFFFF00FFFFFF00BABBBBFFFBFAFAFFD0D0D0FFE6E6
+      E6FFC8C7C7FFEDEDEDFFCFCECEFFE7E6E6FFCCCCCCFFEBEAEBFFEFEEEEFFE7E6
+      E7FFFBFAFAFFA6AAABFFFFFFFF00FFFFFF00B7B5B8FFFBFAFAFFFBFAFAFFFBFA
+      FAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFAFAFFFBFA
+      FAFFFBFAFAFFA6A7A8FFFFFFFF00FFFFFF00B0B1B4FFB0B1B1FFB0B1B1FFADB0
+      B1FFADAEB1FFA9AEAEFFAAAAACFFA8A9ABFFA6A7A7FFA5A6A8FFA0A1A4FF9E9E
+      A2FF9B9F9FFF9A9B9CFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00DDDBDBFFD1CE
+      CEFFC7C3C3FFC1BEBDFFC1BEBDFFC1BEBDFFC1BEBDFFC4C1C0FFC9C5C5FFD4D2
+      D2FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D1CECEFFC7C3C3FFDBD8
+      D7FFF1EFEFFFEEEEEEFFEBEAEAFFE6E6E6FFE2E0E0FFDCDBDBFFD4D3D3FFBFBC
+      BDFFD1CECEFFFFFFFF00FFFFFF00FFFFFF00C7C4C3FFA29C9DFF989193FF958E
+      90FF958E90FF958E90FF958E90FF958E90FF958E90FF958E90FF958E90FF9891
+      93FF9C9698FFC7C4C3FFFFFFFF00CAC6C6FFC5C2C2FFF4F4F4FFF5F5F5FFF5F4
+      F4FFF4F3F3FFF2F1F1FFEFEEEEFFEBEAEAFFE7E6E6FFE2E1E1FFDEDDDDFFDAD9
+      D9FFD8D7D7FFD0CECEFFBCB8B7FFA5A0A0FFE9E7E7FFEEECECFFEBE9E9FFE6E4
+      E4FFDFDDDDFFDAD8D8FFC8C6C6FFC4C2C2FFCBC9C9FFD1CFCFFF716D6EFF42C8
+      8EFF716D6EFF9E9C9DFF948E8EFF908989FFE3E1E1FFEBEBEBFFD5D4D4FFC3C1
+      C2FFB0AEAFFF9D9B9CFF9B999AFF9F9D9EFFA7A5A6FFAFADAEFF45AD82FF4BFF
+      B1FF45AD82FF999596FF888182FFA8A3A2FFE5E4E4FFEAE8E8FFE7E5E5FFE1DF
+      DFFFD8D6D6FFCDCBCBFFBCBABAFFB4B2B3FFBAB8B8FFC1BFBFFF716D6EFF4AAC
+      81FF716D6EFF9E9C9DFF958F8FFFC3BFBEFFB8B3B3FFF5F5F5FFF5F5F5FFF5F4
+      F4FFF4F3F3FFF2F1F1FFEFEEEEFFEBEAEAFFE7E6E6FFE2E1E1FFDEDDDDFFDAD9
+      D9FFD8D7D7FFB0ACACFFB9B5B5FFFFFFFF00BBB7B6FF918B8BFF877F80FF7E76
+      77FF7F7778FF7E7677FF7F7778FF7E7677FF7F7778FF7E7677FF7E7677FF877F
+      80FF918A8BFFB8B2B3FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00E5DDE1FFD3C6C4FFD3BDC6FFDAC6CEFFE4D4
+      DCFFEBE6E6FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00DFDCE4FFACB2BDFFB3B4ADFFCFBDB9FFDFCAD4FFE4D4
+      DBFFE2DBDDFFEBE6EBFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00E6DAE4FFB3A6C1FFACBDD3FFB1CACCFFCCC9BFFFE6DADCFFEEE4
+      E9FFEBE6EBFFDBD1D7FFE9E1E5FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00D1BED4FFB99FCAFFB9B3D8FFB3C7D8FFB8C4BFFFCFCAC8FFE6DF
+      E2FFE5D8E0FFD7C6CFFFD8CCD3FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00C8B4C2FFCFB8D1FFCDB8DDFFBEB9CFFFDADADAFFDCDCDCFFCAC3
+      C7FFDAC8D2FFCDB7C4FFC1ABB7FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00C6B4BEFFDFCAD4FFE6D7DFFFD7D2D7FFE6E6E6FFE5E5E5FFC1B8
+      CEFFC3ADCDFFBDA2BAFFB098A7FFFFFFFF00FFFFFF00FFFFFF00DDDBDBFFD1CE
+      CEFFC7C3C3FFDCD2D8FFE4D4DAFFEEE4E9FFE8E0E4FFD6CED1FFBFC7C6FFAEBC
+      CEFFB0A4CAFFAB8EB8FFC3B1C4FFFFFFFF00FFFFFF00D1CECEFFC7C3C3FFDBD8
+      D7FFF1EFEFFFE5DDE1FFDBD3D8FFEEE4E9FFE4D7DFFFDAC6CFFFC2B7B6FFA6B7
+      BCFF9EABC2FF9B90ACFFDCD2DCFFFFFFFF00C7C4C3FFA29C9DFF989193FF958E
+      90FF958E90FF958E90FFE9E4E9FFCFC3CAFFD4C3CCFFCFB9C7FFC1A8AEFFA69E
+      9DFF9198A4FFD8D8E0FFFFFFFF00CAC6C6FFC5C2C2FFF4F4F4FFF5F5F5FFF5F4
+      F4FFF4F3F3FFF2F1F1FFEFEEEEFFDFDADCFFD2C6CCFFA797A0FFA18C96FFC2B6
+      B6FFD7D4D7FFD0CECEFFBCB8B7FFA5A0A0FFE9E7E7FFEEECECFFECEAEAFFE9E7
+      E7FFE5E3E3FFDFDDDDFFD7D5D5FFCDCBCBFFC1BFBFFFB1AFAFFF716D6EFF42C8
+      8EFF716D6EFF9E9C9DFF948E8EFF908989FFE3E1E1FFEBEBEBFF797576FF7773
+      74FF777374FF777374FF767273FF767374FF9E9C9DFF8B898AFF45AD82FF4BFF
+      B1FF45AD82FF999596FF888182FFA8A3A2FFE5E4E4FFEAE8E8FFE6E4E4FFE0DE
+      DEFFD8D6D6FFCFCDCDFFC5C3C3FFBBB9B9FFB2B0B0FFA7A5A5FF716D6EFF4AAC
+      81FF716D6EFF9E9C9DFF958F8FFFC3BFBEFFB8B3B3FFF5F5F5FFF5F5F5FFF5F4
+      F4FFF4F3F3FFF2F1F1FFEFEEEEFFEBEAEAFFE7E6E6FFE2E1E1FFDEDDDDFFDAD9
+      D9FFD8D7D7FFB0ACACFFB9B5B5FFFFFFFF00BBB7B6FF918B8BFF877F80FF7E76
+      77FF7F7778FF7E7677FF7F7778FF7E7677FF7F7778FF7E7677FF7E7677FF877F
+      80FF918A8BFFB8B2B3FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D3D5D4FF858A
+      88FF858A88FF858A88FF858A88FF858A88FF858A88FF858A88FF858A88FF858A
+      88FF858A88FF858A88FFC3C6C5FFFFFFFF00FFFFFF00FFFFFF00858A88FFFEFD
+      FDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFD
+      FDFFFEFDFDFFFEFDFDFF858A88FFFFFFFF00FFFFFF00FFFFFF00858A88FFFEFD
+      FDFFEBEBEBFFEAEAEAFFE9E9E9FFE9E9E9FFE9E9E9FFE9E9E9FFE9E9E9FFE9E9
+      E9FFE9E9E9FFFEFDFDFF858A88FFC3C6C5FF858A88FF858A88FF858A88FF858A
+      88FF858A88FF858A88FF858A88FF858A88FF858A88FF858A88FF858A88FFC4C6
+      C6FFE9E9E9FFFEFDFDFF858A88FF858A88FFFEFDFDFFFEFDFDFFFEFDFDFFFEFD
+      FDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFF858A
+      88FFE9E9E9FFFEFDFDFF858A88FF858A88FFFEFDFDFFE9E9E9FFE9E9E9FFE9E9
+      E9FFE9E9E9FFE9E9E9FFE9E9E9FFE9E9E9FFEAEAEAFFEBEBEBFFFEFDFDFF858A
+      88FFEAEAEAFFFEFDFDFF858A88FF858A88FFFEFDFDFFE9E9E9FFE9E9E9FFE9E9
+      E9FFE9E9E9FFE9E9E9FFEAEAEAFFEBEBEBFFECECECFFECECECFFFEFDFDFF858A
+      88FFEBEBEBFFFEFDFDFF858A88FF858A88FFFEFDFDFFE9E9E9FFE9E9E9FFE9E9
+      E9FFE9E9E9FFEAEAEAFFEBEBEBFFECECECFFEDEDEDFFEEEEEEFFFEFDFDFF858A
+      88FFFEFDFDFFFEFDFDFF858A88FF858A88FFFEFDFDFFE9E9E9FFE9E9E9FFEAEA
+      EAFFEBEBEBFFECECECFFEDEDEDFFEEEEEEFFEFEFEFFFEFEFEFFFFEFDFDFF858A
+      88FFFEFDFDFF858A88FFD0D1D0FF858A88FFFEFDFDFFEAEAEAFFEBEBEBFFECEC
+      ECFFECECECFFEDEDEDFFEEEEEEFFEFEFEFFFF0F0F0FFF1F1F1FFFEFDFDFF858A
+      88FFFEFDFDFF858A88FFFFFFFF00858A88FFFEFDFDFFEBEBEBFFECECECFFEDED
+      EDFFEEEEEEFFEFEFEFFFEFEFEFFFF0F0F0FFF1F1F1FFF2F2F2FFFEFDFDFF858A
+      88FF858A88FF858A88FFFFFFFF00858A88FFFEFDFDFFFEFDFDFFEEEEEEFFEFEF
+      EFFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFFFEFDFDFF858A
+      88FFCED0CFFF858A88FFFFFFFF00D0D1D0FF858A88FFFEFDFDFFEFEFEFFFFEFD
+      FDFF858A88FF858A88FF858A88FF858A88FF858A88FF858A88FF858A88FFC9C9
+      C9FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00858A88FFFEFDFDFFFEFDFDFF858A
+      88FFCED0CFFFEBEBEBFFEBEBEBFFEBEBEBFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FEFEFEFF858A88FF858A88FF858A88FFC3C5
+      C4FFE8E8E8FFE4E4E4FFE2E2E2FFE5E5E5FFE9E9E9FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00858A88FFCED0CFFFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00A1BBC1FFA1BBC1FFA1B1B9FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00ABB4B7FFABB4B7FFABB4
+      B7FF90AAB0FF8CDEF6FF8CDEF6FF85D8EDFF7E9498FF99A4A6FFA0A4A7FF99A4
+      A6FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00ABB4B7FFA2DCEFFFA3DDF0FFA2DC
+      EFFF98ADB0FF8EE2F4FF97A1A1FF7BD0E5FF8599A1FF6BAECBFF7BC6E5FF5CC0
+      E1FF888F95FFFFFFFF00FFFFFF00FFFFFF00ABB4B7FFA3DDF0FFC0C0C0FF8FA5
+      A9FF82D0E6FF78D7F6FF7ADAEEFF6BD0F1FF60B9D6FF7E8D90FFC0C0C0FF48AD
+      D4FF888C95FFFFFFFF00FFFFFF00FFFFFF00ABB1B7FFA3DDF0FFC0C0C0FF8FA1
+      A9FF8F99A1FF8599A1FF869598FF869598FF869098FF7E8C98FFCACACAFFBABA
+      BAFF80848DFFFFFFFF00FFFFFF00FFFFFF00A9B0AFFFA3DDF0FFBFBFBFFFFAFB
+      FBFFFCFDFDFFFCFDFDFFFDFEFEFFFDFEFEFFFDFEFEFFFDFEFEFFC5C5C5FFF6F6
+      F6FFBBBBBBFFFFFFFF00FFFFFF00FFFFFF00A2ACAFFF99D8E9FFBDBDBDFFF9FA
+      FAFFDED6CEFFDED7CFFFDED7CFFFDFD7CFFFDFD7CFFFFDFEFEFFBABABAFFB8B8
+      B8FFB8B8B8FFBABABAFFFFFFFF00FFFFFF00A2ACAFFF91D4E8FFBCBCBCFFF8F9
+      FAFFFAFBFCFFFBFCFCFFFCFDFDFFFCFDFDFFFDFEFEFFFDFEFEFFFDFEFEFFEBEB
+      ECFFE6E7E7FFBABABAFFFFFFFF00FFFFFF00A2A9AFFF8AD1E7FFBABABAFFF7F8
+      F9FFDDD5CEFFDDD6CEFFDED6CEFFDED7CFFFDED7CFFFDED7CFFFDED7CFFFFDFE
+      FEFFFCFCFDFFB8B8B8FFFFFFFF00FFFFFF00A0A4A7FF82CDE6FFB8B8B8FFF6F7
+      F8FFF9F9FAFFF9F9FAFFFAFAFBFFFAFBFCFFFBFCFCFFFCFCFDFFFCFDFDFFFDFE
+      FEFFFCFCFDFFB8B8B8FFFFFFFF00FFFFFF0099A4A6FF82CAE6FFB5B5B5FFF6F7
+      F8FFDDD5CDFFDDD5CEFFDDD5CEFFDDD6CEFFDED6CEFFDED6CFFFDED6CFFFFCFD
+      FDFFFCFCFDFFB5B5B5FFFFFFFF00FFFFFF0099A4A6FF82CAE6FFB8B8B8FFF4F4
+      F6FFFAFAFBFFFAFAFBFFFAFAFBFFFAFBFCFFFBFBFCFFFBFBFCFFFAFBFBFFFBFC
+      FCFFFBFBFCFFB7B7B7FFFFFFFF00FFFFFF0099A0A6FF5CC0E1FFB6B6B6FFF1F1
+      F3FFDED6CEFFDED6CEFFDED6CEFFDED6CEFFDED6CEFFDED6CEFFDED6CEFFF9F9
+      FAFFF9F9FAFFB6B6B6FFFFFFFF00FFFFFF00FFFFFF0092A0A6FFB1B1B1FFF0F0
+      F2FFF1F2F3FFF2F2F4FFF3F3F4FFF3F4F5FFF4F5F6FFF5F5F7FFF6F6F7FFF7F7
+      F8FFF7F8F9FFB1B1B1FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00A4A4A4FFA4A4
+      A4FFA4A4A4FFA4A4A4FFA4A4A4FFA4A4A4FFA4A4A4FFA4A4A4FFA4A4A4FFA4A4
+      A4FFA4A4A4FFA4A4A4FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00DDDF
+      DDFFDFE1DFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E8E8E8FF69A3
+      76FF619F6FFFEAEAEAFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D9DCD9FF6CAC7FFFEBFC
+      F0FFDFF6E5FF65A574FFD7DAD8FFFFFFFF00FFFFFF00D6DAD7FFDBDEDBFFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C9CFCAFF67B784FFD0F1DBFFCEE9
+      D8FFD9EEE0FF90D9A8FF36A96AFFFFFFFF00C3CAC5FF59B377FF52B174FFCCD1
+      CDFFFFFFFF00FFFFFF00FFFFFF00B8C5BDFF62C289FFB6E7CAFFB0E0C3FFB4E1
+      C5FF76CC99FF21A95DFF60A77FFFB3C0B7FF4DB572FF9EDBB6FF96DAB2FF4ABB
+      78FFBBC7C0FFFFFFFF00A6BBAFFF5CCC8EFF99DFB9FF93D9B2FF94D9B3FF5BCA
+      8DFF21AA5EFF5EA67EFFFFFFFF00398953FF24B55EFF53BF81FF73CE9BFF7ED6
+      A6FF47C180FF65AB86FF57CF91FF7FD9ABFF76D4A4FF6ED39FFF40CB85FF21AA
+      5FFF60A680FFFFFFFF00FFFFFF002AAC68FF148D3BFF1AB862FF1EB666FF30C0
+      77FF43C987FF43D18CFF4ACF8FFF3DCB87FF2BC77DFF23CA7CFF22AA61FF8993
+      8AFFFFFFFF00FFFFFF00FFFFFF00FFFFFF002AAC68FF179143FF1FC777FF1BC1
+      6FFF1CC575FF1CC778FF1DC97AFF1DCC7BFF2CD489FF25A962FF949C94FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008D988EFF259C54FF2BD4
+      89FF1DCE80FF1ED084FF1ED486FF40DE9AFF2AAB67FFA5AAA5FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0097A199FF33A3
+      62FF3CE09BFF1FDB8FFF54E6AAFF32B06FFFB8BCB8FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00AAB2
+      ACFF41AB73FF6AE9B5FF37B376FFC8CAC8FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00B6BCB8FF3AAD75FFD4D5D4FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00DFDFDFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF007E88D2FF7F89D7FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D9DAE1FF7885
+      E8FF9A9FC6FFFFFFFF00FFFFFF00F2F2F2FF7F89D1FFBBC3FFFFBBC3FFFF7A84
+      D0FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D9DAE1FF7D89E5FFC9CF
+      FFFFA5B0FFFF989EC8FFFFFFFF00616BB8FF566AFEFFAFB8FFFFA9B3FFFFA9B3
+      FFFF7680CEFFFFFFFF00FFFFFF00FFFFFF00D9DAE1FF7683E4FFAFB8FFFFA9B3
+      FFFFA9B3FFFF3C4FDEFFE9E9E9FF838ABFFF1E30BAFF495DF3FF9BA7FFFF99A5
+      FFFF99A5FFFF727DD0FFFFFFFF00DEDFE4FF6D7BE5FF9FAAFFFF99A5FFFF95A1
+      FFFF2F44E5FF2635ABFFE6E6E6FFE4E4E4FF3A46A0FF3244CEFF4257F2FF8B99
+      FFFF8997FFFF8997FFFF6673D2FF6775E1FF8D9AFFFF8997FFFF8593FFFF2A40
+      E4FF2839BAFF707494FFFFFFFF00FFFFFF00D4D4D6FF2E3A97FF1E31C2FF374D
+      F3FF7989FFFF7989FFFF7989FFFF7989FFFF7989FFFF7585FFFF273DE5FF1E2F
+      B4FF676C8FFFEFEFEFFFFFFFFF00FFFFFF00FFFFFF00D6D6D6FF303D9CFF1E32
+      C4FF3148F3FF6B7CFFFF6B7CFFFF6B7CFFFF697BFFFF2239E6FF1E30B8FF676C
+      93FFF0F0F0FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E2E2E2FF3643
+      A6FF3D53F5FF6375FFFF6375FFFF6577FFFF6577FFFF364CEEFF6068A6FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00B7BACFFF4D60
+      EFFF6174FFFF6174FFFF6174FFFF6375FFFF6375FFFF5B6EFFFF495BE3FFCECF
+      DAFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00A3A7C7FF1F39FBFF2F47
+      FFFF3D54FFFF4F64FFFF3147E9FF364CEEFF4B60FFFF3950FFFF334BFFFF364C
+      F2FFBBBDCFFFFFFFFF00FFFFFF00FFFFFF009399C5FF1F39FFFF2B44FFFF354D
+      FFFF4B60FFFF384DE8FF0218BAFF061CC0FF4559EDFF596DFFFF475DFFFF3F56
+      FFFF374EF9FFABAFC9FFFFFFFF00979CC5FF1D38FFFF2B44FFFF3950FFFF576B
+      FFFF4559EBFF061CC4FF666B94FF565D92FF0A21CAFF5567EDFF6B7CFFFF5165
+      FFFF4157FFFF354DFFFFAFB2C7FF5560AFFF213BFFFF374FFFFF596DFFFF4A5D
+      EEFF051CC7FF777B9DFFFFFFFF00FFFFFF00636997FF081FCEFF5A6BEEFF7383
+      FFFF5569FFFF364EFEFF6E75AAFF666DA2FF0922DFFF485CF6FF4B5FF1FF051C
+      C9FF868AA4FFFFFFFF00FFFFFF00FFFFFF00FFFFFF0074799EFF051DCDFF5A6C
+      F0FF5A6CF4FF0921D9FF7E83A6FFD6D6D8FF313EA1FF364CF2FF1429CAFF989A
+      ACFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00878BA5FF1127
+      CDFF3046EAFF3E499AFFE2E2E2FFFFFFFF00D9D9D9FF626AA2FFA4A6B2FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00989A
+      ACFF656CA1FFE3E3E3FFFFFFFF00
+    }
+  end
+end
